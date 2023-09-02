@@ -1,0 +1,129 @@
+/*
+* Mehdi Calanducci
+* 30.03.2021
+* (Last modif. 11/04/2021)
+* Mise en forme
+* Projet Spaceships 
+*/
+
+body {
+    overflow: hidden;
+    width: 1000px;
+    height: 900px;
+    background-image: url("../img/background/pixel_background2.jpg");
+    background-repeat: no-repeat;
+}
+
+
+/*Navigation*/
+
+nav {
+    background-color: black;
+    height: 50px;
+}
+
+ul {
+    padding-top: 1%;
+}
+
+li {
+    display: inline;
+    position: relative;
+}
+
+li a {
+    padding: 8px;
+    color: white;
+    padding-top: 20%;
+}
+
+li a:hover {
+    background-color: orange;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav>form>input {
+    float: inherit;
+    background-color: black;
+    color: rgba(194, 130, 35, 0.8);
+}
+
+
+/*Plateau de Jeu*/
+
+#board {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    bottom: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 900px;
+    min-width: 1000px;
+    /*background-image: url('../img/background/pixel_background1.png');*/
+    background-image: url('../img/background/pixel_background2.jpg');
+    background-repeat: no-repeat;
+    padding-right: 500px;
+    padding-top: 5%;
+    overflow: hidden;
+}
+
+#spaceship {
+    position: absolute;
+    top: 50%;
+    /*Debug du problème de l'ArrowDown*/
+    bottom: 50%;
+    /*Debug du problème de l'ArrowDown*/
+    /*left: 0px;*/
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-image: url('../img/spaceships/spaceship1.png');
+    background-size: contain;
+}
+
+.weapons {
+    position: absolute;
+    /*top: 105px;*/
+    /*left: 130px;*/
+    height: 50px;
+    width: 80px;
+    background-image: url('../img/weapons/red_weapons.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.enemies {
+    position: absolute;
+    right: 0px;
+    height: 100px;
+    width: 160px;
+    background-image: url('../img/Enemy/ennemy1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#score {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0.7;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#player {
+    position: inherit;
+    top: 0px;
+    right: 0px;
+    opacity: 0.7;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+    margin-right: 20px;
+}
